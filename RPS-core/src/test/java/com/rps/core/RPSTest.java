@@ -9,29 +9,29 @@ import static org.junit.jupiter.api.Assertions.*;
 public class RPSTest {
 
     @Test
-    public void RockVsScissors(){ assertEquals(P1_WINS, RPS.play(ROCK, SCISSORS)); }
+    public void RockVsSpock(){ assertEquals(P1_WINS, RPS.play(ROCK, SPOCK)); }
 
     @Test
-    public void ScissorsVsRock(){
-        assertEquals(P2_WINS, RPS.play(SCISSORS, ROCK));
+    public void SpockVsRock(){
+        assertEquals(P2_WINS, RPS.play(SPOCK, ROCK));
     }
 
     @Test
-    public void ScissorsVsPaper(){
-        assertEquals(P1_WINS, RPS.play(SCISSORS, PAPER));
+    public void SpockVsLizard(){
+        assertEquals(P1_WINS, RPS.play(SPOCK, LIZARD));
     }
 
     @Test
-    public void PaperVsScissors(){ assertEquals(P2_WINS, RPS.play(PAPER, SCISSORS)); }
+    public void LizardVsSpock(){ assertEquals(P2_WINS, RPS.play(LIZARD, SPOCK)); }
 
     @Test
-    public void PaperVsRock(){
-        assertEquals(P1_WINS, RPS.play(PAPER, ROCK));
+    public void LizardVsRock(){
+        assertEquals(P1_WINS, RPS.play(LIZARD, ROCK));
     }
 
     @Test
-    public void RockVsPaper(){
-        assertEquals(P2_WINS, RPS.play(ROCK, PAPER));
+    public void RockVsLizard(){
+        assertEquals(P2_WINS, RPS.play(ROCK, LIZARD));
     }
 
     @Test
@@ -40,12 +40,12 @@ public class RPSTest {
     }
 
     @Test
-    public void PaperVsPaper(){
-        assertEquals(TIE, RPS.play(PAPER, PAPER));
+    public void LizardVsLizard(){
+        assertEquals(TIE, RPS.play(LIZARD, LIZARD));
     }
 
     @Test
-    public void ScissorsVsScissors(){
-        assertEquals(TIE, RPS.play(SCISSORS, SCISSORS));
+    public void SpockVsSpock(){
+        assertEquals(TIE, RPS.play(SPOCK, SPOCK));
     }
 }
